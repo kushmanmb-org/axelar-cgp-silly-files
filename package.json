@@ -4,7 +4,10 @@
   "description": "EVM Smart Contracts for Axelar Network",
   "main": "index.js",
   "overrides": {
-    "elliptic": "^6.6.1"
+    "elliptic": "^6.6.1",
+    "handlebars": "^4.7.9",
+    "@polygon-hermez/vm": "6.0.12",
+    "@polygon-hermez/zkevm-commonjs": "github:hermeznetwork/zkevm-commonjs#v1.0.0"
   },
   "scripts": {
     "build": "hardhat clean && hardhat compile && npm run copy:interfaces",
@@ -51,7 +54,7 @@
     "eslint-config-richardpringle": "^2.0.0",
     "ethers": "^5.7.2",
     "fs-extra": "^11.1.1",
-    "hardhat": "~2.22.2",
+    "hardhat": "^2.22.2",
     "hardhat-contract-sizer": "^2.10.0",
     "hardhat-storage-layout": "^0.1.7",
     "lodash": "^4.17.21",
